@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Nethouse test task</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+</head>
+
+<body>
+<header></header>
+<main class="main">
+  <form class="main__form">
+    <div class="main__input-wrapper">
+      <label class="main__label" for="name">
+        <span class="main__text">
+          ФИО
+        </span>
+      </label>
+      <input id="name" class="main__input input input--name" placeholder="Шаповалов Антон Сергеевич" required
+             pattern="^[A-ZА-Я][a-zа-я]+ [A-ZА-Я][a-zа-я]+ [A-ZА-Я][a-zа-я]+$">
+    </div>
+    <div class="main__input-wrapper">
+      <label class="main__label" for="email">
+        <span class="main__text">
+          Почта
+        </span>
+      </label>
+      <input id="email" class="main__input input input--email" placeholder="Email" required
+             pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@gmail.com$">
+    </div>
+    <div class="main__input-wrapper">
+      <label class="main__label" for="phone">
+        <span class="main__text">
+          Телефон
+        </span>
+      </label>
+      <input id="phone" class="main__input input input--phone" placeholder="Телефон" required
+             pattern="^(?:\+7|8|07)[0-9]*">
+    </div>
+    <button type="submit" class="main__submit-button">
+      Отправить
+    </button>
+  </form>
+</main>
+</body>
+
+</html>

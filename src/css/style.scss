@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.main {
+  &__form {
+    width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+  }
+  &__input-wrapper {
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+    margin: 0 auto 20px auto;
+    border-radius: 20px;
+    padding: 5px 15px;
+  }
+
+  &__label {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    padding: 0 5px;
+    top: 0;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 14px;
+    display: block;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  &__submit-button {
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
