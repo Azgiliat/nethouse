@@ -7,6 +7,22 @@ import email from './email.js';
 
 button.addEventListener('click', (evt) => {
   evt.preventDefault();
+
+  if (!name.checkValidity()) {
+    name.reportValidity();
+    return;
+  }
+
+  if (!phone.checkValidity()) {
+    phone.reportValidity();
+    return;
+  }
+
+  if (!email.checkValidity()) {
+    email.reportValidity();
+    return;
+  }
+
   const data = {
     name: name.value,
     email: email.value,
